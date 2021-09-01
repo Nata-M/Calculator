@@ -1,0 +1,81 @@
+body, p, h1, h2 {
+    margin: 0;
+    padding: 0;
+}
+h1, h2, p, button, div, header {
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+main {
+    width: 100vw;
+    height: 100vh;
+    min-width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to left,#00fc71, #00acfb );
+}
+.container {
+    display: flex;
+    width: 350px;
+    min-width: 280px;
+    flex-direction: column;
+}
+header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 20px 8px;
+    height: 80px;
+    background-color: #00352d;
+    flex-direction: row-reverse;
+}
+header p {
+    font-size: 32px;
+    color: #fff;
+}
+.board {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch;
+}
+.board button {
+    background-color: #bff5eb;
+    border: 1px solid #fff;
+    border-collapse: collapse;
+    cursor: pointer;
+    color: #010305;
+    font-size: 32px;
+    padding: 12px 16px;
+    width: 25%;
+    height:auto;
+}
+.board button:hover {
+    background-color: #a8e6d9;
+}
+.board button:active {
+    background-color: #bff5eb;
+}
+.ac {
+    width: 50% !important;
+}
+.equal {
+    width: 50% !important;
+    background-color: #e6fcf6 !important; 
+}
+.equal:hover {
+    background-color: #ddf7f2 !important; 
+}
+.equal:active, .equal:focus {
+    background-color: #7ff598 !important; 
+}
+@media only screen and (max-width: 380px) {
+    .container {
+      width: 280px;
+    }
+    .board button {
+        font-size: 22px;
+    }
+  }
